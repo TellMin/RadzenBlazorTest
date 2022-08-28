@@ -1,4 +1,4 @@
-name: github pages
+name: Deploy Portfolio Site
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       # Checkout the code
       - uses: actions/checkout@v2
@@ -16,16 +16,16 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 5.0.100
+          dotnet-version: 6.0.201
 
       # Publish the site
       - name: Publish
-        run: dotnet publish (プロジェクトフォルダ)/(プロジェクト名).csproj -p:GHPages=true -c:Release -o:public
+        run: dotnet publish TakunologyPortfolio.csproj -p:GHPages=true -c:Release -o:publish
 
       # Deploy the site
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public/wwwroot
+          publish_dir: publish/wwwroot
           force_orphan: true
