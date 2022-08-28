@@ -1,0 +1,15 @@
+﻿<RadzenLabel Text="@specialName" />
+<RadzenImage Path="@IconPath" Style="height:64px;width:64px"/>
+
+@code {
+    [Parameter]
+    public string specialName { get; set; } = string.Empty;
+
+    [Parameter]
+    public string SupecialId { get; set; } = string.Empty;
+
+    private string IconPath
+    {
+        get => $"/special/S3_Weapon_Special_{SupecialId}.png";
+    }
+}

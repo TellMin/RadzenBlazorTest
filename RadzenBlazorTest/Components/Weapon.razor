@@ -1,0 +1,15 @@
+﻿<RadzenLabel Text="@weaponName"/>
+<RadzenImage Path="@IconPath" Style="height:64px;width:64px"/>
+
+@code {
+    [Parameter]
+    public string weaponName { get; set; } = string.Empty;
+
+    [Parameter]
+    public string WeaponId { get; set; } = string.Empty;
+
+    private string IconPath
+    {
+        get => $"/weapons/S3_Weapon_Main_{WeaponId}.png";
+    }
+}

@@ -1,6 +1,550 @@
 ﻿@page "/"
+@using RadzenBlazorTest.Components
 
 <PageTitle>Splatoon3発売おめでとう</PageTitle>
 
-<h1>Hello, world!</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ぶき</th>
+            <th scope="col">サブ</th>
+            <th scope="col">スペシャル</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <Weapon WeaponId=".52_Gal" weaponName="	.52ガロン" />
+            </td>
+            <td>
+                <Sub SubId="Splash_Wall" subName="スプラッシュシールド" />
+            </td>
+            <td>
+                <Special SupecialId="Killer_Wail_5.1" specialName="メガホンレーザー5.1ch" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId=".96_Gal" weaponName="	.96ガロン" />
+            </td>
+            <td>
+                <Sub SubId="Sprinkler" subName="スプリンクラー" />
+            </td>
+            <td>
+                <Special SupecialId="Ink_Vac" specialName="キューインキ" />
+            </td>
+        </tr>
+        
+        <tr style="visibility:hidden;">
+            <td>
+                <Weapon WeaponId=".96_Gal" weaponName="	.52ガロン" />
+            </td>
+            <td>
+                <Sub SubId="Angle_Shooter" subName="ラインマーカー" />
+                <Sub SubId="Autobomb" subName="ロボットボム" />
+                <Sub SubId="Burst_Bomb" subName="クイックボム" />
+                <Sub SubId="Curling_Bomb" subName="カーリングボム" />
+                <Sub SubId="Fizzy_Bomb" subName="タンサンボム" />
+                <Sub SubId="Ink_Mine" subName="トラップ" />
+                <Sub SubId="Point_Sensor" subName="ポイントセンサー" />
+                <Sub SubId="Splat_Bomb" subName="スプラッシュボム" />
+                <Sub SubId="Sprinkler" subName="スプリンクラー" />
+                <Sub SubId="Squid_Beakon" subName="ジャンプビーコン" />
+                <Sub SubId="Suction_Bomb" subName="キューバンボム" />
+                <Sub SubId="Toxic_Mist" subName="ポイズンミスト" />
+                <Sub SubId="Torpedo" subName="トーピード" />
+            </td>
+            <td>
+                <Special SupecialId="Big_Bubbler" specialName="グレートバリア" />
+                <Special SupecialId="Booyah_Bomb" specialName="ナイスダマ" />
+                <Special SupecialId="Crab_Tank" specialName="カニタンク" />
+                <Special SupecialId="Ink_Storm" specialName="アメフラシ" />
+                <Special SupecialId="Inkjet" specialName="ジェットパック" />
+                <Special SupecialId="Ink_Vac" specialName="キューインキ" />
+                <Special SupecialId="Reefslider" specialName="サメライド" />
+                <Special SupecialId="Tacticooler" specialName="エナジースタンド" />
+                <Special SupecialId="Tenta_Missiles" specialName="マルチミサイル" />
+                <Special SupecialId="Triple_Inkstrike" specialName="トリプルトルネード" />
+                <Special SupecialId="Trizooka" specialName="ウルトラショット" />
+                <Special SupecialId="Ultra_Stamp" specialName="ウルトラハンコ" />
+                <Special SupecialId="Wave_Breaker" specialName="ホップソナー" />
+                <Special SupecialId="Killer_Wail_5.1" specialName="メガホンレーザー5.1ch" />
+                <Special SupecialId="Zipcaster" specialName="ショクワンダー" />
+            </td>
+        </tr>
 
+        <tr>
+            <td>
+                <Weapon WeaponId="Aerospray_MG" weaponName="プロモデラーMG" />
+            </td>
+            <td>
+                <Sub SubId="Fizzy_Bomb" subName="タンサンボム" />
+            </td>
+            <td>
+                <Special SupecialId="Reefslider" specialName="サメライド" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Ballpoint_Splatling" weaponName="クーゲルシュライバー" />
+            </td>
+            <td>
+                <Sub SubId="Fizzy_Bomb" subName="タンサンボム" />
+            </td>
+            <td>
+                <Special SupecialId="Inkjet" specialName="ジェットパック" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Bamboozler_14_Mk_I" weaponName="14式竹筒銃・甲" />
+            </td>
+            <td>
+                <Sub SubId="Autobomb" subName="ロボットボム" />
+            </td>
+            <td>
+                <Special SupecialId="Killer_Wail_5.1" specialName="メガホンレーザー5.1ch" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Blaster" weaponName="ホットブラスター" />
+            </td>
+            <td>
+                <Sub SubId="Autobomb" subName="ロボットボム" />
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Bloblobber" weaponName="オーバーフロッシャー" />
+            </td>
+            <td>
+                <Sub SubId="Sprinkler" subName="スプリンクラー" />
+            </td>
+            <td>
+                <Special SupecialId="Ink_Storm" specialName="アメフラシ" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Carbon_Roller	" weaponName="カーボンローラー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Clash_Blaster	" weaponName="クラッシュブラスター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <Weapon WeaponId="Classic_Squiffer" weaponName="スクイックリンα" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <Weapon WeaponId="Dapple_Dualies" weaponName="スパッタリー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <Weapon WeaponId="Dark_Tetra_Dualies" weaponName="クアッドホッパーブラック" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+                <tr>
+            <td>
+                <Weapon WeaponId="Dualie_Squelchers" weaponName="デュアルスイーパー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Dynamo_Roller" weaponName="ダイナモローラー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="E-liter_4K" weaponName="リッター4K" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="E-liter_4K_Scope" weaponName="4Kスコープ" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Explosher" weaponName="エクスプロッシャー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Flingza_Roller" weaponName="ヴァリアブルローラー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Glooga_Dualies" weaponName="ケルビン525" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Goo_Tuber" weaponName="ソイチューバー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="H-3_Nozzlenose" weaponName="H3リールガン" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Heavy_Splatling" weaponName="バレルスピナー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Hydra_Splatling" weaponName="ハイドラント" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Inkbrush" weaponName="パブロ" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Jet_Squelcher	" weaponName="ジェットスイーパー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="L-3_Nozzlenose" weaponName="L3リールガン" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Luna_Blaster" weaponName="ノヴァブラスター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Mini_Splatling" weaponName="スプラスピナー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="N-ZAP_'85" weaponName="N-ZAP85" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Nautilus_47" weaponName="ノーチラス47" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Octobrush" weaponName="ホクサイ" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Range_Blaster" weaponName="ロングブラスター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Rapid_Blaster" weaponName="ラピッドブラスター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Rapid_Blaster_Pro" weaponName="Rブラスターエリート" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Slosher" weaponName="バケットスロッシャー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Sloshing_Machine" weaponName="スクリュースロッシャー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splash-o-matic" weaponName="シャープマーカー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splat_Brella" weaponName="パラシェルター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splat_Charger" weaponName="スプラチャージャー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splat_Dualies" weaponName="スプラマニューバー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splat_Roller" weaponName="スプラローラー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splatana_Stamper" weaponName="ジムワイパー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splatana_Wiper" weaponName="ドライブワイパー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splatterscope" weaponName="スプラスコープ" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splattershot" weaponName="スプラシューター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splattershot_Jr." weaponName="わかばシューター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Splattershot_Pro" weaponName="プライムシューター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Sploosh-o-matic" weaponName="ボールドマーカー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Squeezer" weaponName="ボトルガイザー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Tenta_Brella" weaponName="キャンピングシェルター" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Tri-Slosher" weaponName="ヒッセン" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Tri-Stringer" weaponName="トライストリンガー" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <Weapon WeaponId="Undercover_Brella" weaponName="スパイガジェット" />
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
