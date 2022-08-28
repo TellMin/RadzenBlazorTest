@@ -1,0 +1,106 @@
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-7scij8wyrf] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-7scij8wyrf] {
+    flex: 1;
+}
+
+.sidebar[b-7scij8wyrf] {
+    background-image: linear-gradient(90deg, #0840fa 20%, #f5ff00 70%);
+}
+
+.top-row[b-7scij8wyrf] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-7scij8wyrf]  a, .top-row[b-7scij8wyrf]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+        .top-row[b-7scij8wyrf]  a:hover, .top-row[b-7scij8wyrf]  .btn-link:hover {
+            text-decoration: underline;
+        }
+
+        .top-row[b-7scij8wyrf]  a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+    .top-row:not(.auth)[b-7scij8wyrf] {
+        display: none;
+    }
+
+    .top-row.auth[b-7scij8wyrf] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-7scij8wyrf]  a, .top-row[b-7scij8wyrf]  .btn-link {
+        margin-left: 0;
+    }
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-wfg3jwwckl] {
+    background-color: #0840fa;
+}
+
+.navbar-toggler-icon[b-wfg3jwwckl]{
+    color:black;
+}
+
+.top-row[b-wfg3jwwckl] {
+    height: 3.5rem;
+}
+
+.navbar-brand[b-wfg3jwwckl] {
+    font-size: 1.1rem;
+}
+
+.oi[b-wfg3jwwckl] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-wfg3jwwckl] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-wfg3jwwckl] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-wfg3jwwckl] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-wfg3jwwckl]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-wfg3jwwckl]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-wfg3jwwckl]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
