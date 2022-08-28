@@ -1,6 +1,7 @@
-﻿<RadzenLabel Text="@weaponName"/>
+﻿<div style="display:flex;flex-flow:column;">
+<RadzenLabel Text="@weaponName" Style="font-size:x-small"/>
 <RadzenImage Path="@IconPath" Style="height:64px;width:64px"/>
-
+</div>
 @code {
     [Parameter]
     public string weaponName { get; set; } = string.Empty;

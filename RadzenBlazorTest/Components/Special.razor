@@ -1,6 +1,8 @@
-﻿<RadzenLabel Text="@specialName" />
-<RadzenImage Path="@IconPath" Style="height:64px;width:64px"/>
+﻿<div style="display:flex;flex-flow:column;">
 
+<RadzenLabel Text="@specialName" Style="font-size:x-small"/>
+<RadzenImage Path="@IconPath" Style="height:64px;width:64px" />
+</div>
 @code {
     [Parameter]
     public string specialName { get; set; } = string.Empty;
